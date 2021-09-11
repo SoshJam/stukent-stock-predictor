@@ -15,6 +15,7 @@ yarn.lock
 # firebase hosting
 .firebaserc
 firebase.json
+.firebase
 
 # misc
 .DS_Store
