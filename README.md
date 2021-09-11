@@ -17,7 +17,12 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 
 ## Change History
 
-- Sept. 10, 2021: Published first version of project
+- Sep 10, 2021
+    - Published first version of project
+    - Added Hank Auto Co. (Ford)
+- Sep 11, 2021
+    - Added Superior Purchase (Best Buy)
+    - Added style rules for smaller screens
 
 ## Important Notes
 
