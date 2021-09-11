@@ -2,7 +2,9 @@
 
 ## What is this?
 
-This is a stock prediction application I made for my financial literacy class. The companies in the mock investment simulation have fake names, but they correlate with the stock history of actual companies.
+This is a stock prediction application I made for my financial literacy class. We use the Stukent Personal Finance simulation, and it has a feature which allows you to invest.
+
+The companies in the simulation have fake names, but they correlate with the stock history of actual companies. If you can find them, you can "predict" what stock values they will have in the future and get rich.
 
 Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug Store = CVS. But there are still a few companies I haven't been able to trace back to their real world equivalent.
 
