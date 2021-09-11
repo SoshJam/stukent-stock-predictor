@@ -10,7 +10,7 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 
 ## How do I use this?
 
-1. Go to <https://stukent-stock-simulator.web.app/>
+1. Go to <https://stukent-stock-predictor.web.app/>
 2. Look at the predicted stock prices
 3. Go to Money Management > Investments in Stukent
 4. Invest accordingly
