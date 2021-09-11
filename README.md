@@ -16,3 +16,7 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 ## Change History
 
 - Sept. 10, 2021: Started working on project
+
+## Important Notes
+
+This will not work for every iteration of the Stukent Stock Predictor. You can still see which companies are which, but your simulation likely starts on a different date.
