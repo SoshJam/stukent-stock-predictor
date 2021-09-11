@@ -81,7 +81,7 @@ function App() {
             />
           </tbody>
         </table>
-        <p class="tiny"><em>* For some reason, this stock is always 2-3 cents off from the IRL price, so be warned. If there's ever more of a discrepancy please let me know.</em></p>
+        <p class="tiny"><em>* For some reason, this stock is always 2-3 cents off from the IRL price, so be warned. If there's ever a larger discrepancy please let me know.</em></p>
 
         <hr/>
 
