@@ -87,7 +87,7 @@ function App() {
 
         <h1>More Info</h1>
 
-        <p>Welcome to Sam Hill's Stukent Stock Predictor! This is still a pretty rudimentary site because I made it in 3 hours, but eventually it's going to be a lot better. It still looks bad on small screens for now. Eventually I will be adding a line chart as well to more easily visualize the stocks.</p>
+        <p>Welcome to Sam Hill's Stukent Stock Predictor! This is still a pretty rudimentary site because I made it in like 5 hours, but eventually it's going to be a lot better. It still looks bad on small screens for now. Eventually I will be adding a line chart as well to more easily visualize the stocks.</p>
 
         <p>The listed share prices are the ones the market <strong>closes</strong> on on a given day. Stukent shows the closing prices from the day before. If you look at the graph there, it'll say {getDate(-1)} instead of {getDate(0)}. If it's confusing, you can think of it like "This is how much a share will be worth by midnight that night." You want to invest in the ones that will be worth the most soonest.</p>
 
