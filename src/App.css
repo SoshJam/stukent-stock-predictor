@@ -38,8 +38,16 @@ hr {
 
 .stocktable {
   width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
   border: 1px solid #cccccc;
   border-collapse: collapse;
+}
+
+@media (max-width: 1600px) {
+  .stocktable {
+    display: block;
+  }
 }
 
 .stocktable th, .stocktable td {
