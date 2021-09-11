@@ -18,9 +18,9 @@ function App() {
       </header>
 
       <main>
-        <h1>Stock Predictions</h1>
-
         {/* Line Chart will go here */}
+        
+        <h1>Stock Table</h1>
 
         <table class='stocktable'>
           <colgroup class="first-col"></colgroup>
@@ -99,11 +99,11 @@ function App() {
 
         <h1>More Info</h1>
 
-        <p>Welcome to Sam Hill's Stukent Stock Predictor! This is still a pretty rudimentary site because I made it in like 5 hours, but eventually it's going to be a lot better. It still looks bad on small screens for now. Eventually I will be adding a line chart as well to more easily visualize the stocks.</p>
+        <p>Welcome to Sam Hill's Stukent Stock Predictor! This is still a pretty rudimentary site because I made it in like 5 hours, but eventually it's going to be a lot better. Eventually I will be adding a line chart as well to more easily visualize the stocks.</p>
 
         <p>The listed share prices are the ones the market <strong>closes</strong> on on a given day. Stukent shows the closing prices from the day before. If you look at the graph there, it'll say {getDate(-1)} instead of {getDate(0)}. If it's confusing, you can think of it like "This is how much a share will be worth by midnight that night." You want to invest in the ones that will be worth the most soonest.</p>
 
-        <p>Additionally, you may notice that some stocks are missing, namely MFCR, RWCIX, and MIH. I wasn't able to figure out what they meant, so if you can figure out please let me know and I'll add it to the site. Also I'm 99% Run Fast Telecom (RFT) is Sprint Mobile, but they merged with T-Mobile in 2020 and I can't find their history anywhere.</p>
+        <p>Additionally, you may notice that some stocks are missing, namely MFCR, RWCIX, and MIH. I wasn't able to figure out what they meant, so if you can figure out please let me know and I'll add it to the site. Also I'm 99% sure Run Fast Telecom (RFT) is Sprint Mobile, but they merged with T-Mobile in 2020 and I can't find their history anywhere.</p>
 
         <p>See the <a href="https://github.com/SoshJam/stukent-stock-predictor#readme" target="_blank" rel="noreferrer">Github README</a> for more information.</p>
 
