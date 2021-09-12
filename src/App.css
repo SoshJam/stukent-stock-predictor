@@ -47,8 +47,8 @@ hr {
 }
 
 /* table setup */
-
 .stocktable {
+  position: relative;
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
@@ -70,14 +70,14 @@ hr {
 
 .first-col {
   width: 20%;
-  background-color: #dddddd;
+  background-color: #eeeeee;
 }
 
 .today-col {
   background-color: #eeeeee;
 }
 
-.today-th {
+.th-highlight {
   background-color: #dddddd;
 }
 
@@ -107,5 +107,12 @@ hr {
     padding: 1em;
     font-size: 0.75em;
   }
-   
+  
+  th.first-column {
+    font-size: 1em;
+  }
+  
+  th.first-column .subtitle {
+    font-size: 0.75em;
+  }
 }

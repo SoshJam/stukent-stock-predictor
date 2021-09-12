@@ -29,7 +29,7 @@ function App() {
 
           <thead>
             <tr>
-              <th>Company</th>
+              <th class="th-highlight">Company</th>
               <DateDisplay offset="-2" />
               <DateDisplay offset="-1" />
               <DateDisplay offset="0" />
@@ -48,48 +48,56 @@ function App() {
               company="Exin Petrolium (EXP)"
               irl="Exxon Mobil Corp. (XOM)"
               name="EXP_XOM"
+              ticker="EXP"
             />
             
             <StockTableRow
               company="Supermart (SPM)"
               irl="Walmart Inc. (WMT)"
               name="SPM_WMT"
+              ticker="SPM"
             />
             
             <StockTableRow
               company="Corner Drug Store, Inc. (CDS)"
               irl="CVS Health Services (CVS)"
               name="CDS_CVS"
+              ticker="CDS"
             />
             
             <StockTableRow
               company="Superior Purchase (SP)*"
               irl="Best Buy Co., Inc. (BBY)"
               name="SP_BBY"
+              ticker="SP"
             />
             
             <StockTableRow
               company="Swoosh Athletics (SA)*"
               irl="Nike Inc. (NKE)"
               name="SA_NKE"
+              ticker="SA"
             />
             
             <StockTableRow
               company="Big Bank of US (BBUS)"
               irl="Bank of America Corp. (BAC)"
               name="BBUS_BAC"
+              ticker="BBUS"
             />
             
             <StockTableRow
               company="US Flights (SUF)"
               irl="American Airlines Group Inc. (AAL)"
               name="SUF_AAL"
+              ticker="SUF"
             />
             
             <StockTableRow
               company="Hank Auto Co. (HAC)"
-              irl="Ford Motor Company (F)"
+              irl="Ford Motor Co. (F)"
               name="HAC_F"
+              ticker="HAC"
             />
           </tbody>
         </table>

@@ -69,7 +69,7 @@ function StockTableRow(props) {
     },[]);
 
     return <tr>
-        <th>
+        <th class="first-column">
             <h2>{props.company}</h2>
             <span class='subtitle'>IRL: {props.irl}</span>
         </th>
