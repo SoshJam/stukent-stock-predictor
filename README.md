@@ -25,6 +25,7 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
     - Added style rules for smaller screens
 - Sep 12, 2021
     - Added line chart
+    - Added hidden feature to show percent change per day 👀
 
 ## Important Notes
 

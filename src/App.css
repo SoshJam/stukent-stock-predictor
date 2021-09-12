@@ -91,6 +91,9 @@ hr {
   font-style: italic;
 }
 
+.change-positive { color: #00bb00; }
+.change-negative { color: #bb0000; }
+
 /* line chart */
 
 .chart-container {

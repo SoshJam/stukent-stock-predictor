@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 
 function StockTableRow(props) {
-    const defaultPriceData = [
+    const [priceData, setPriceData] = useState([
         ["1970-01-01","0.00"],
         ["1970-01-01","0.00"],
         ["1970-01-01","0.00"],
@@ -12,8 +12,20 @@ function StockTableRow(props) {
         ["1970-01-01","0.00"],
         ["1970-01-01","0.00"],
         ["1970-01-01","0.00"]
-    ]
-    const [priceData, setPriceData] = useState(defaultPriceData);
+    ]);
+    const [changeData, setChangeData] = useState([
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"],
+        ["0.00"]
+    ])
 
     const getData=()=>{
         fetch('./StockData/' + props.name + '.json'
@@ -60,8 +72,58 @@ function StockTableRow(props) {
             finalData.push(data[i])
         }
 
+        // Get percent change between days
+        for (let i = 1; i < 10; i++) {
+            let priceBefore = parseFloat(finalData[i-1][1]);
+            let priceNow = parseFloat(finalData[i][1])
+            let priceChange = (((priceNow / priceBefore) - 1) * 100).toFixed(2);
+            let newChangeData = changeData;
+            newChangeData[i] = priceChange;
+            setPriceData(newChangeData);
+        }
+
         setPriceData(finalData);
         console.log();
+    }
+
+    const setSubTitle = (id, showPercent) => {
+        if (props.u) {
+            let targetCellId = "cell" + props.name + id + "sub";
+            if (showPercent) {
+                document.getElementById(targetCellId).innerHTML = (
+                    changeData[id] >= 0 ?
+                        "+" + changeData[id] :
+                        changeData[id]
+                    ) + "%";
+                document.getElementById(targetCellId).className = "subtitle " + (
+                    changeData[id] >= 0 ?
+                        "change-positive" :
+                        "change-negative"
+                    );
+            } else {
+                document.getElementById(targetCellId).innerHTML = priceData[id][0];
+                document.getElementById(targetCellId).className = "subtitle";
+            }
+        }
+    }
+
+    const printCols = (num) => {
+        let cols;
+
+        for (let i = 1; i < num + 1; i++) {
+            let elem = <td
+                onMouseEnter={()=>setSubTitle(i,true)}
+                onMouseLeave={()=>setSubTitle(i,false)}
+            >
+                ${priceData[i][1]}<br/>
+                <span className='subtitle' id={"cell" + props.name + i + "sub"}>
+                    {priceData[i][0]}
+                </span>
+            </td>;
+            cols = [cols, elem];
+        }
+
+        return cols;
     }
 
     useEffect(() => {
@@ -69,61 +131,18 @@ function StockTableRow(props) {
     },[]);
 
     return <tr>
-        <th class="first-column">
+        <th className="first-column">
             <h2>{props.company}</h2>
-            <span class='subtitle'>IRL: {props.irl}</span>
+            <span className='subtitle'>IRL: {props.irl}</span>
         </th>
 
         <td>
             ${priceData[0][1]}<br/>
-            <span class='subtitle'>{priceData[0][0]}</span>
+            <span className='subtitle'>{priceData[0][0]}</span>
         </td>
 
-        <td>
-            ${priceData[1][1]}<br/>
-            <span class='subtitle'>{priceData[1][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[2][1]}<br/>
-            <span class='subtitle'>{priceData[2][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[3][1]}<br/>
-            <span class='subtitle'>{priceData[3][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[4][1]}<br/>
-            <span class='subtitle'>{priceData[4][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[5][1]}<br/>
-            <span class='subtitle'>{priceData[5][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[6][1]}<br/>
-            <span class='subtitle'>{priceData[6][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[7][1]}<br/>
-            <span class='subtitle'>{priceData[7][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[8][1]}<br/>
-            <span class='subtitle'>{priceData[8][0]}</span>
-        </td>
-
-        <td>
-            ${priceData[9][1]}<br/>
-            <span class='subtitle'>{priceData[9][0]}</span>
-        </td>
-    </tr>
+        {printCols(9)}
+    </tr>;
 }
 
 export default StockTableRow;

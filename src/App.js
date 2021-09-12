@@ -1,3 +1,4 @@
+import { useState } from 'react/cjs/react.development';
 import './App.css';
 import DateDisplay from './components/DateDisplay';
 import LineChart from './components/LineChart';
@@ -10,6 +11,8 @@ function App() {
     let date = new Date(new Date().getTime() + (86400 * 1000 * dayOffset));
     return monthnames[date.getMonth()] + " " + date.getDate();
   }
+
+  const [unlocked, setUnlocked] = useState(false);
 
   return (
     <div className="App">
@@ -52,6 +55,7 @@ function App() {
               irl="Exxon Mobil Corp. (XOM)"
               name="EXP_XOM"
               ticker="EXP"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -59,6 +63,7 @@ function App() {
               irl="Walmart Inc. (WMT)"
               name="SPM_WMT"
               ticker="SPM"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -66,6 +71,7 @@ function App() {
               irl="CVS Health Services (CVS)"
               name="CDS_CVS"
               ticker="CDS"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -73,6 +79,7 @@ function App() {
               irl="Best Buy Co., Inc. (BBY)"
               name="SP_BBY"
               ticker="SP"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -80,6 +87,7 @@ function App() {
               irl="Nike Inc. (NKE)"
               name="SA_NKE"
               ticker="SA"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -87,6 +95,7 @@ function App() {
               irl="Bank of America Corp. (BAC)"
               name="BBUS_BAC"
               ticker="BBUS"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -94,6 +103,7 @@ function App() {
               irl="American Airlines Group Inc. (AAL)"
               name="SUF_AAL"
               ticker="SUF"
+              u={unlocked}
             />
             
             <StockTableRow
@@ -101,6 +111,7 @@ function App() {
               irl="Ford Motor Co. (F)"
               name="HAC_F"
               ticker="HAC"
+              u={unlocked}
             />
           </tbody>
         </table>
@@ -123,7 +134,7 @@ function App() {
       </main>
 
       <footer>
-        Copyright &copy; {new Date().getFullYear()} Sam Hill
+        Copyright <span onClick={() => setUnlocked(!unlocked)}>&copy;</span> {new Date().getFullYear()} Sam Hill
       </footer>
 
     </div>
