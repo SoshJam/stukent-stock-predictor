@@ -159,7 +159,14 @@ class LineChart extends React.Component {
                         '#2622DD', // BBUS
                         '#C95C97', // SUF
                         '#016301' // HAC
-                    ]
+                    ],
+                    yaxis: {
+                        labels: {
+                            formatter: function (value) {
+                                return "$" + value.toFixed(2);
+                            }
+                        },
+                    },
                 }}
                 series={this.state.chartData}
                 type="line"
