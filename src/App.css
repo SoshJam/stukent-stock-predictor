@@ -1,3 +1,4 @@
+/* doc setup */
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
 
 * { margin: 0; }
 
+/* header and footer */
 header {
   padding: 0;
   background-color: #28546C;
@@ -18,6 +20,14 @@ header h1 {
   color: white;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #28546C;
+  color: white;
+}
+
+/* content */
 main {
   padding: 2em;
 }
@@ -35,6 +45,8 @@ p {
 hr {
   margin: 1em 0;
 }
+
+/* table setup */
 
 .stocktable {
   width: 100%;
@@ -79,13 +91,7 @@ hr {
   font-style: italic;
 }
 
-footer {
-  padding: 20px;
-  text-align: center;
-  background-color: #28546C;
-  color: white;
-}
-
+/* handle small screens*/
 @media (max-width: 1600px) {
   .stocktable {
     display: block;
