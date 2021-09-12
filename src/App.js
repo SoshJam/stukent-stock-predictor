@@ -103,7 +103,9 @@ function App() {
 
         <p>The listed share prices are the ones the market <strong>closes</strong> on on a given day. Stukent shows the closing prices from the day before. If you look at the graph there, it'll say {getDate(-1)} instead of {getDate(0)}. If it's confusing, you can think of it like "This is how much a share will be worth by midnight that night." You want to invest in the ones that will be worth the most soonest.</p>
 
-        <p>Additionally, you may notice that some stocks are missing, namely MFCR, RWCIX, and MIH. I wasn't able to figure out what they meant, so if you can figure out please let me know and I'll add it to the site. Also I'm 99% sure Run Fast Telecom (RFT) is Sprint Mobile, but they merged with T-Mobile in 2020 and I can't find their history anywhere.</p>
+        <p>Additionally, you may notice that some stocks are missing, namely MFCR, RWCIX, and MIH. I wasn't able to figure out what they meant, so if you can figure out please let me know and I'll add it to the site.</p>
+        
+        <p>Also, I've applied my incredible deduction skills to reach the conclusion that Run Fast Telecom (RFT) is indeed Sprint (shocker), but they merged with T-Mobile last year and so I can't find the correct data. I need everything from 9/1/08 to 9/1/18. One website has slightly inaccurate data and only goes back to Jul 2009. Another has correct data, but only allows you to look it up for one day at a time. If you can find anywhere with accurate data across the needed time frame that allows you to download it in bulk, please reach out to me.</p>
 
         <p>See the <a href="https://github.com/SoshJam/stukent-stock-predictor#readme" target="_blank" rel="noreferrer">Github README</a> for more information.</p>
 
