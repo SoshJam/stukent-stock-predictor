@@ -91,10 +91,21 @@ hr {
   font-style: italic;
 }
 
+/* line chart */
+
+.chart-container {
+  margin: auto;
+  width: 50%;
+}
+
 /* handle small screens*/
 @media (max-width: 1600px) {
   .stocktable {
     display: block;
+  }
+
+  .chart-container {
+    width: 75%;
   }
 }
 
@@ -114,5 +125,9 @@ hr {
   
   th.first-column .subtitle {
     font-size: 0.75em;
+  }
+
+  .chart-container {
+    width: 100%;
   }
 }

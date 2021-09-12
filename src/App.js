@@ -1,5 +1,6 @@
 import './App.css';
 import DateDisplay from './components/DateDisplay';
+import LineChart from './components/LineChart';
 import StockTableRow from './components/StockTableRow';
 
 function App() {
@@ -18,9 +19,11 @@ function App() {
       </header>
 
       <main>
-        {/* Line Chart will go here */}
+        <h1>Share Price Graph</h1>
         
-        <h1>Stock Table</h1>
+        <LineChart />
+        
+        <h1>Share Price Table</h1>
 
         <table class='stocktable'>
           <colgroup class="first-col"></colgroup>
