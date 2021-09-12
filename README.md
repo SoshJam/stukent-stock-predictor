@@ -23,6 +23,8 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 - Sep 11, 2021
     - Added Superior Purchase (Best Buy)
     - Added style rules for smaller screens
+- Sep 12, 2021
+    - Added line chart
 
 ## Important Notes
 
