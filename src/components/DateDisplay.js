@@ -19,7 +19,7 @@ function DateDisplay(props) {
         getDate();
     },[]);
 
-    return <th className={props.offset == 0 ? "today-th" : ""}>
+    return <th className={props.offset == 0 ? "th-highlight" : ""}>
         {dateStr}
     </th>
 }
