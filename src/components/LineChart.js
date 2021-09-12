@@ -145,7 +145,10 @@ class LineChart extends React.Component {
             <Chart
                 options={{
                     chart: {
-                        id: "prices"
+                        id: "prices",
+                        toolbar: {
+                            show: false
+                        }
                     },
                     xaxis: {
                         categories: this.state.chartDates
@@ -166,7 +169,7 @@ class LineChart extends React.Component {
                                 return "$" + value.toFixed(2);
                             }
                         },
-                    },
+                    }
                 }}
                 series={this.state.chartData}
                 type="line"
