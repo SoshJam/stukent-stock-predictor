@@ -134,7 +134,7 @@ function App() {
       </main>
 
       <footer>
-        Copyright &copy; {new Date().getFullYear()} Sam Hill
+        v1.2.0 - Copyright &copy; {new Date().getFullYear()} Sam Hill
       </footer>
 
     </div>
