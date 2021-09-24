@@ -19,29 +19,21 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 
 ## Currently Tracked Companies
 
-- 🛢 Exin Petrolium (EXP)
-    *IRL: Exxon Mobil (XOM)*
+🛢 Exin Petrolium (EXP) | *IRL: Exxon Mobil (XOM)*
 
-- 🛒 Supermart (SPM)
-    *IRL: Walmart (WMT)*
+🛒 Supermart (SPM) | *IRL: Walmart (WMT)*
 
-- 💊 Corner Drug Store, Inc. (CDS)
-    *IRL: CVS (CVS)*
+💊 Corner Drug Store, Inc. (CDS) | *IRL: CVS (CVS)*
 
-- 💻 Superior Purchase (SP)
-   *IRL: Best Buy (BBY)*
+💻 Superior Purchase (SP) | *IRL: Best Buy (BBY)*
 
-- 👟 Swoosh Athletics (SA)
-    *IRL: Nike (NKE)*
+👟 Swoosh Athletics (SA) | *IRL: Nike (NKE)*
 
-- 💰 Big Bank of US (BBUS)
-    *IRL: Bank of America (BAC)*
+💰 Big Bank of US (BBUS) | *IRL: Bank of America (BAC)*
 
-- ✈ US Flights (SUF)
-    *IRL: American Airlines (AAL)*
+✈ US Flights (SUF) | *IRL: American Airlines (AAL)*
 
-- 🚗 Hank Auto Co. (HAC)
-    *IRL: Ford (F)*
+🚗 Hank Auto Co. (HAC) | *IRL: Ford (F)*
 
 ## Change History
 
