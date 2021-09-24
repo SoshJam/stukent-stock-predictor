@@ -79,7 +79,7 @@ function StockTableRow(props) {
             let priceChange = (((priceNow / priceBefore) - 1) * 100).toFixed(2);
             let newChangeData = changeData;
             newChangeData[i] = priceChange;
-            setPriceData(newChangeData);
+            setChangeData(newChangeData);
         }
 
         setPriceData(finalData);
