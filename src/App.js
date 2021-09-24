@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import DateDisplay from './components/DateDisplay';
+import Disclaimer from './components/Disclaimer';
 import LineChart from './components/LineChart';
 import StockTableRow from './components/StockTableRow';
 
@@ -134,8 +135,10 @@ function App() {
       </main>
 
       <footer>
-        v1.2.0 - Copyright &copy; {new Date().getFullYear()} Sam Hill
+        v1.2.1 - Copyright &copy; {new Date().getFullYear()} Sam Hill
       </footer>
+
+      <Disclaimer />
 
     </div>
   );

@@ -28,6 +28,10 @@ footer {
 }
 
 /* content */
+.hidden {
+  display: none;
+}
+
 main {
   padding: 2em;
 }
@@ -101,6 +105,40 @@ hr {
   width: 50%;
 }
 
+/* disclaimer */
+.disclaimer {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position:fixed;
+  text-align: center;
+  padding: 2em;
+}
+
+.disclaimer div {
+  padding: 2em;
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  border-radius: 1em;
+}
+
+.disclaimer button {
+  margin-top: 1.5em;
+  padding: 1em 4em;
+  color: white;
+  letter-spacing: 0.33em;
+  border: 0;
+  border-radius: 2em;
+  background-color: #28546C;
+}
+
+.disclaimer button:hover {
+  background-color: #477187;
+}
+
 /* handle small screens*/
 @media (max-width: 1600px) {
   .stocktable {
@@ -132,5 +170,10 @@ hr {
 
   .chart-container {
     width: 100%;
+  }
+
+  .disclaimer div {
+    margin: 0;
+    width: calc(100% - 8em);
   }
 }

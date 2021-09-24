@@ -17,14 +17,40 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 3. Go to Money Management > Investments in Stukent
 4. Invest accordingly
 
+## Currently Tracked Companies
+
+🛢 Exin Petrolium (EXP)
+*IRL: Exxon Mobil (XOM)*
+
+🛒 Supermart (SPM)
+*IRL: Walmart (WMT)*
+
+💊 Corner Drug Store, Inc. (CDS)
+*IRL: CVS (CVS)*
+
+💻 Superior Purchase (SP)
+*IRL: Best Buy (BBY)*
+
+👟 Swoosh Athletics (SA)
+*IRL: Nike (NKE)*
+
+💰 Big Bank of US (BBUS)
+*IRL: Bank of America (BAC)*
+
+✈ US Flights (SUF)
+*IRL: American Airlines (AAL)*
+
+🚗 Hank Auto Co. (HAC)
+*IRL: Ford (F)*
+
 ## Change History
 
 - 1.0.0 - Sep 10, 2021
-    - Published first version of project
+    - Published first version of project 🎉
 - 1.0.1 - Sep 10, 2021
-    - Added Hank Auto Co. (Ford)
+    - Added Hank Auto Co. (Ford) 🚗
 - 1.0.2 - Sep 11, 2021
-    - Added Superior Purchase (Best Buy)
+    - Added Superior Purchase (Best Buy) 💻
 - 1.0.3 - Sep 11, 2021
     - Added style rules for smaller screens
 - 1.1.0 - Sep 12, 2021
@@ -34,6 +60,11 @@ Some of them were quite obvious, like Swoosh Athletics = Nike and Corner Drug St
 - 1.2.0 - Sep 15, 2021
     - Fixed error with data not lining up if a day is missing
     - Added a version tracker
+- 1.2.1 - Sep 24, 2021
+    - Updated US Flights (American Airlines) stock data ✈
+    - Added a disclaimer about usage of this website
+    - Fixed storing of data to incorrect variable
+        - Not sure how it was working before, but now it works *intentionally*
 
 ## Important Notes
 
