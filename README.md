@@ -2,6 +2,8 @@
 
 version 1.2.0
 
+**NOTE:** (10/3/23) This project has been shut down for nearly two years now. Many people have been reaching out to me asking how to set this up or how to get the data (and frankly it's become quite annoying.) I will not answer questions for how to run this particular application or how I got the data. 
+
 ## What is this?
 
 This is a stock prediction application I made for my financial literacy class. We use the Stukent Personal Finance simulation, and it has a feature which allows you to invest.
@@ -64,4 +66,4 @@ This will not work for every iteration of the Stukent Stock Predictor. You can s
 
 ## Contact
 
-If you have any questions or suggestions, you can contact me at <soshjam@soshjam.com>.
+If you have any questions or suggestions, you can contact me at <soshjam@soshjam.com>. **PLEASE NOTE that I will not help you set this up for yourself or explain how I got the data.**
