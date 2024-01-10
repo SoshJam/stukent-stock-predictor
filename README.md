@@ -1,8 +1,8 @@
 # Stukent Stock Predictor
 
-version 1.2.0
+version 1.2.1
 
-**NOTE:** (10/3/23) This project has been shut down for nearly two years now. Many people have been reaching out to me asking how to set this up or how to get the data (and frankly it's become quite annoying.) I will not answer questions for how to run this particular application or how I got the data. 
+**NOTE:** (1/10/24) This project has been shut down for about two years now. Many people have been reaching out to me asking how to set this up or how to get the data. I'm sorry, but I don't have the time to respond to everyone. I can't explain how to set the project up for yourself, or how I got the data. But I'm happy to answer questions about the code itself!
 
 ## What is this?
 
